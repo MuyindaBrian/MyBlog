@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Html on Muyinda Brian Blog</title>
+    <link>http://localhost:1313/categories/html/</link>
+    <description>Recent content in Html on Muyinda Brian Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Nov 2023 16:55:24 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top Tech Trends to Watch in 2025</title>
+      <link>http://localhost:1313/my-fourth-post/</link>
+      <pubDate>Wed, 22 Nov 2023 16:55:24 +0100</pubDate>
+      <guid>http://localhost:1313/my-fourth-post/</guid>
+      <description>&lt;h3 id=&#34;blog-1-top-tech-trends-to-watch-in-year&#34;&gt;Blog 1: Top Tech Trends to Watch in [Year]&lt;/h3&gt;&#xA;&lt;p&gt;As we step into [Year], the tech landscape is brimming with exciting innovations that promise to reshape our world. Technology continues to evolve at an unprecedented pace, bringing new possibilities and challenges. Here are the top tech trends to keep an eye on this year:&lt;/p&gt;&#xA;&lt;h4 id=&#34;1-artificial-intelligence-everywhere&#34;&gt;1. Artificial Intelligence Everywhere&lt;/h4&gt;&#xA;&lt;p&gt;AI has moved beyond being a buzzword to becoming a cornerstone of modern technology. This year, expect to see AI integrated into more aspects of daily life. From personalized recommendations on streaming platforms to advanced AI-powered business solutions, the technology is becoming ubiquitous. AI is also revolutionizing healthcare with predictive analytics, enabling early diagnosis of diseases. Furthermore, natural language processing (NLP) advancements are making AI assistants more conversational and useful.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
