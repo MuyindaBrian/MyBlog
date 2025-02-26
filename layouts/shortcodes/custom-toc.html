@@ -1,0 +1,13 @@
+<div id="fix_toc" class="fix_toc hide">    
+    <div class="widget widget_toc">
+        <h2 class="widgettitle">Table of Contents <span class="toggle"></span></h2>
+        {{ .Page.TableOfContents }} 
+    </div>  
+</div>
+<button class="toc_toggle" onclick="toggleToc()"><img src="toc-icon.jpg" alt="toc icon"></button>
+<script>
+    function toggleToc() {
+        var fix_toc = document.getElementById("fix_toc");
+        fix_toc.classList.toggle("hide");
+    }
+</script>

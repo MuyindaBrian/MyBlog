@@ -1,57 +1,1086 @@
 {{ define "main" }}
-<div class="list">
 
- 
+<main>
+  <article>
 
-<header>
-  
-  <section class="home" id="home">
-    <div class="home-text ">
-      <h2 class="home-title">Muyinda Brian</h2>
-      <span class="home-subtitle">Welcome to my Blog. Your source for great content</span>
-    </div>
-  </section>
+    <!-- 
+      - #HERO
+    -->
 
-</header>
+    <section class="hero" id="home" aria-label="home">
+      <div class="container">
 
+        <div class="hero-content">
 
+          <p class="hero-subtitle">Hello Everyone!</p>
 
+          <h1 class="headline headline-1 section-title">
+            I’m <span class="span">Muyinda Brian</span>
+          </h1>
 
+          <p class="hero-text">
+            Freelance all-in-one developer, designer, SEO specialist. Available for hire
+          </p>
 
+          <div class="input-wrapper">
 
+            <button class="btn btn-primary">
+              <span class="span">View Portfolio</span>
 
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
 
+          </div>
 
+        </div>
 
-  {{ range .Paginator.Pages }}
-  <div class="listItem">
-    <img
-      src={{
-      .Params.image
-      }}
-      alt="{{.Title}}"
-      class="listItemImage"
-      loading="lazy"
-    />
-    <div class="listItemTexts">
-      <h1 class="listItemTitle">
-        <a href="{{.Permalink}}">{{.Title}}</a>
-      </h1>
-      <p class="listItemDesc">{{.Params.description}}</p>
-      <div class="listItemDetail">
-        <img src="{{.Params.avatar}}" loading="lazy" alt="" class="listItemAvatar"/>
-        <span>{{ range (.GetTerms "authors")}}
-          <a href={{.Permalink}}>{{ .Name }}</a>
-          {{end}}</span>
-        <time>{{ dateFormat .Site.Params.dateFormat  .Date}}</time>
+        <div class="hero-banner">
+
+          <img src="/images/hr2.png" width="327" height="490" alt="Wren Clark" class="w-100">
+
+          <img src="/images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
+
+          <img src="/images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
+
+        </div>
+
+        <img src="/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+        <img src="/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
       </div>
-      <div class="listItemCategories">
-        {{ range (.GetTerms "categories") }}
-        <a class="listItemCategory" href={{ .Permalink }}>{{ .Name }}</a>
-        {{ end }}
+    </section>
+
+
+
+
+
+    <!-- 
+      - #TOPICS
+    -->
+
+    <section class="topics" id="topics" aria-labelledby="topic-label">
+      <div class="container">
+
+        <div class="card topic-card">
+
+          <div class="card-content">
+
+            <h2 class="headline headline-2 section-title card-title" id="topic-label">
+              Services
+            </h2>
+
+            <p class="card-text">
+              Here are some of the services I offer...
+            </p>
+
+            
+
+          </div>
+
+          <div class="slider" data-slider>
+            <ul class="slider-list" data-slider-container>
+
+              <li class="slider-item">
+                <a href="#" class="slider-card">
+
+                  <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                    <img src="/images/web-development.webp" width="507" height="618" loading="lazy" alt="Web Development"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="slider-content">
+                    <span class="slider-title">Web Development</span>
+
+                  </div>
+
+                </a>
+              </li>
+
+              <li class="slider-item">
+                <a href="#" class="slider-card">
+
+                  <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                    <img src="/images/SEO.webp" width="507" height="618" loading="lazy" alt="S.E.O"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="slider-content">
+                    <span class="slider-title">S.E.O</span>
+                  </div>
+
+                </a>
+              </li>
+
+              <li class="slider-item">
+                <a href="#" class="slider-card">
+
+                  <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                    <img src="/images/ux-design.webp" width="507" height="618" loading="lazy" alt="UI/UX Design"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="slider-content">
+                    <span class="slider-title">UI/UX Design</span>
+
+                  </div>
+
+                </a>
+              </li>
+
+          
+
+            </ul>
+          </div>
+
+        </div>
+
       </div>
-    </div>
-  </div>
-  {{ end }} {{ template "_internal/pagination.html" . }}
-</div>
+    </section>
+
+
+
+
+
+    <!-- 
+      - #FEATURED POST
+    -->
+
+    <section class="section feature" aria-label="feature" id="featured">
+      <div class="container">
+
+        <h2 class="headline headline-2 section-title">
+          <span class="span">Editor's picked</span>
+        </h2>
+
+        <p class="section-text">
+          Featured and highly rated articles
+        </p>
+
+        <ul class="feature-list">
+
+          <li>
+            <div class="card feature-card">
+
+              <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                <img src="/images/ux-design.webp" width="1602" height="903" loading="lazy"
+                  alt="Professional Websites" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-wrapper">
+                  <div class="card-tag">
+                    <a href="#" class="span hover-2">#Web Design</a>
+
+                    <a href="#" class="span hover-2">#S.E.O</a>
+                  </div>
+
+                  <div class="wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">4 mins read</span>
+                  </div>
+                </div>
+
+                <h3 class="headline headline-3">
+                  <a href="/uganda-benefit-from-professional-website" class="card-title hover-2">
+                    How Small Businesses in Uganda Can Benefit from a Professional Website
+                  </a>
+                </h3>
+
+                <div class="card-wrapper">
+
+                  <div class="profile-card">
+                    <img src="/images/hero2.jpg" width="48" height="48" loading="lazy" alt="redesign website"
+                      class="profile-banner">
+
+                    <div>
+                      <p class="card-title">Muyinda</p>
+
+                      <p class="card-subtitle">02 Feb 2025</p>
+                    </div>
+                  </div>
+
+                  <a href="/uganda-benefit-from-professional-website" class="card-btn">Read more</a>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="card feature-card">
+
+              <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                <img src="/images/redesign.webp" width="1602" height="903" loading="lazy"
+                  alt="Redesign Website" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-wrapper">
+                  <div class="card-tag">
+                    <a href="#" class="span hover-2">#UI/UX Design</a>
+
+                    <a href="#" class="span hover-2">#Graphic Design</a>
+                  </div>
+
+                  <div class="wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">3 mins read</span>
+                  </div>
+                </div>
+
+                <h3 class="headline headline-3">
+                  <a href="5-signs-its-time-redesign" class="card-title hover-2">
+                    5 Signs It’s Time to Redesign Your Website
+                  </a>
+                </h3>
+
+                <div class="card-wrapper">
+
+                  <div class="profile-card">
+                    <img src="/images/hero2.jpg" width="48" height="48" loading="lazy" alt="Muyinda Brian"
+                      class="profile-banner">
+
+                    <div>
+                      <p class="card-title">Muyinda Brian</p>
+
+                      <p class="card-subtitle">20 Feb 2025</p>
+                    </div>
+                  </div>
+
+                  <a href="5-signs-its-time-redesign" class="card-btn">Read more</a>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="card feature-card">
+
+              <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                <img src="/images/mobile.jpg" width="1602" height="903" loading="lazy"
+                  alt="mobile app development" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-wrapper">
+                  <div class="card-tag">
+                    <a href="#" class="span hover-2">#Mobile App Dev</a>
+
+                    <a href="#" class="span hover-2">#React Native</a>
+                  </div>
+
+                  <div class="wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">6 mins read</span>
+                  </div>
+                </div>
+
+                <h3 class="headline headline-3">
+                  <a href="why-mobile-app-development-is-essential-for-business-in-2025" class="card-title hover-2">
+                    Why Mobile App Development is Essential for Businesses in 2025
+                  </a>
+                </h3>
+
+                <div class="card-wrapper">
+
+                  <div class="profile-card">
+                    <img src="/images/hero2.jpg" width="48" height="48" loading="lazy" alt="Joseph"
+                      class="profile-banner">
+
+                    <div>
+                      <p class="card-title">Muyinda Brian</p>
+
+                      <p class="card-subtitle">25 Jan 2025</p>
+                    </div>
+                  </div>
+
+                  <a href="why-mobile-app-development-is-essential-for-business-in-2025" class="card-btn">Read more</a>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="card feature-card">
+
+              <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                <img src="/images/SEO.webp" width="1602" height="903" loading="lazy"
+                  alt="The Power of SEO: How to Rank Your Website Higher and Get More Clients" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-wrapper">
+                  <div class="card-tag">
+                    <a href="#" class="span hover-2">#SEO</a>
+
+                    <a href="#" class="span hover-2">#Design</a>
+                  </div>
+
+                  <div class="wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">6 mins read</span>
+                  </div>
+                </div>
+
+                <h3 class="headline headline-3">
+                  <a href="the-power-of-seo" class="card-title hover-2">
+                    The Power of SEO: How to Rank Your Website Higher and Get More Clients
+                  </a>
+                </h3>
+
+                <div class="card-wrapper">
+
+                  <div class="profile-card">
+                    <img src="/images/hero2.jpg" width="48" height="48" loading="lazy" alt="Muyinda Brian"
+                      class="profile-banner">
+
+                    <div>
+                      <p class="card-title">Muyinda Brian</p>
+
+                      <p class="card-subtitle">25 Feb 2025</p>
+                    </div>
+                  </div>
+
+                  <a href="/the-power-of-seo" class="card-btn">Read more</a>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="card feature-card">
+
+              <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                <img src="/images/4s.webp" width="1602" height="903" loading="lazy"
+                  alt="Self-observation is the first step of inner unfolding" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-wrapper">
+                  <div class="card-tag">
+                    <a href="#" class="span hover-2">#Design</a>
+
+                    <a href="#" class="span hover-2">#Movie</a>
+                  </div>
+
+                  <div class="wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">6 mins read</span>
+                  </div>
+                </div>
+
+                <h3 class="headline headline-3">
+                  <a href="right-development-patner" class="card-title hover-2">
+                    How to Choose the Right Mobile App Development Partner
+                  </a>
+                </h3>
+
+                <div class="card-wrapper">
+
+                  <div class="profile-card">
+                    <img src="/images/hero2.jpg" width="48" height="48" loading="lazy" alt="Muyinda Brian"
+                      class="profile-banner">
+
+                    <div>
+                      <p class="card-title">Muyinda Brian</p>
+
+                      <p class="card-subtitle">08 Jan 2025</p>
+                    </div>
+                  </div>
+
+                  <a href="right-development-patner" class="card-btn">Read more</a>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+       
+
+      </div>
+
+      <img src="./assets/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
+
+    </section>
+
+
+
+
+
+    <!-- 
+      - #POPULAR TAGS
+    -->
+
+    <section class="tags" aria-labelledby="tag-label">
+      <div class="container">
+
+        <h2 class="headline headline-2 section-title" id="tag-label">
+          <span class="span">Popular Tags</span>
+        </h2>
+
+        <p class="section-text">
+          Most searched keywords
+        </p>
+
+        <ul class="grid-list">
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag1.png" width="32" height="32" loading="lazy" alt="Travel">
+
+              <p class="btn-text">Travel</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag2.png" width="32" height="32" loading="lazy" alt="Culture">
+
+              <p class="btn-text">Culture</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag3.png" width="32" height="32" loading="lazy" alt="Lifestyle">
+
+              <p class="btn-text">Lifestyle</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag4.png" width="32" height="32" loading="lazy" alt="Fashion">
+
+              <p class="btn-text">Fashion</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag5.png" width="32" height="32" loading="lazy" alt="Food">
+
+              <p class="btn-text">Food</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag6.png" width="32" height="32" loading="lazy" alt="Space">
+
+              <p class="btn-text">Space</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag7.png" width="32" height="32" loading="lazy" alt="Animal">
+
+              <p class="btn-text">Animal</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag8.png" width="32" height="32" loading="lazy" alt="Minimal">
+
+              <p class="btn-text">Minimal</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag9.png" width="32" height="32" loading="lazy" alt="Interior">
+
+              <p class="btn-text">Interior</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag10.png" width="32" height="32" loading="lazy" alt="Plant">
+
+              <p class="btn-text">Plant</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag11.png" width="32" height="32" loading="lazy" alt="Nature">
+
+              <p class="btn-text">Nature</p>
+            </button>
+          </li>
+
+          <li>
+            <button class="card tag-btn">
+              <img src="/images/tag12.png" width="32" height="32" loading="lazy" alt="Business">
+
+              <p class="btn-text">Business</p>
+            </button>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- 
+      - #RECENT POST
+    -->
+
+    <section class="section recent-post" id="recent" aria-labelledby="recent-label">
+      <div class="container">
+
+        <div class="post-main">
+
+          <h2 class="headline headline-2 section-title">
+            <span class="span">Recent posts</span>
+          </h2>
+
+          <p class="section-text">
+            Don't miss the latest trends
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="recent-post-card">
+
+                <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                  <img src="/images/hosting providers.png" width="271" height="258" loading="lazy"
+                    alt="Best Hosting Providers" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge">Hosting</a>
+
+                  <h3 class="headline headline-3 card-title">
+                    <a href="#" class="link hover-2">The Best Hosting Providers in 2025: Powering the Future of the Web</a>
+                  </h3>
+
+                  <p class="card-text">
+                    In today’s digital-first world, a reliable hosting provider is the backbone of any successful website or application. In **2025**, the hosting industry is evolving rapidly, with new technologies like **edge computing**, **AI-driven optimization**, and **green hosting** taking center stage.
+                  </p>
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2"># Best Hosting</a>
+
+                      <a href="#" class="span hover-2"># Green Hosting</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="recent-post-card">
+
+                <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                  <img src="/images/SEO-1200x600-1.png" width="271" height="258" loading="lazy"
+                    alt="The power of SEO" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge">SEO</a>
+
+                  <h3 class="headline headline-3 card-title">
+                    <a href="the-power-of-seo" class="link hover-2">The Power of SEO: How to Rank Your Website Higher and Get More Clients</a>
+                  </h3>
+
+                  <p class="card-text">
+                    In the digital world, visibility is everything. No matter how well-designed your website is, if people can’t find it, it won’t generate leads or sales. That’s where Search Engine Optimization (SEO) comes in.
+                  </p>
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2"># Web Speed</a>
+
+                      <a href="#" class="span hover-2"># Social Media</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">5 mins read</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="recent-post-card">
+
+                <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                  <img src="/images/web-development.webp" width="271" height="258" loading="lazy"
+                    alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge">Web Development</a>
+
+                  <h3 class="headline headline-3 card-title">
+                    <a href="/content/web-development-roadmap-2025.md" class="link hover-2">Web Development Roadmap 2025: What to Learn and Where to Focus</a>
+                  </h3>
+
+                  <p class="card-text">
+                    The world of web development is constantly evolving, with new technologies, frameworks, and tools emerging every year. It’s clear that the web development landscape will continue to change, offering exciting opportunities for developers and businesses alike.
+                  </p>
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2"># HTML</a>
+
+                      <a href="#" class="span hover-2"># Javascript</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">7 mins read</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="recent-post-card">
+
+                <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                  <img src="/images/pexels-pixabay-40185.webp" width="271" height="258" loading="lazy"
+                    alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge">Chatbots</a>
+
+                  <h3 class="headline headline-3 card-title">
+                    <a href="best-chatbots-in-2025" class="link hover-2">The Best Chatbots in 2025: Revolutionizing Customer Engagement and Automation</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Chatbots have come a long way since their inception. What started as simple rule-based systems has evolved into sophisticated AI-powered assistants capable of handling complex tasks.
+                  </p>
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2"># A.I</a>
+
+                      <a href="#" class="span hover-2"># Machine Learning</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">5 mins read</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="recent-post-card">
+
+                <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                  <img src="/images/ux-design.webp" width="271" height="258" loading="lazy"
+                    alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge">Working Tips</a>
+
+                  <h3 class="headline headline-3 card-title">
+                    <a href="how-to-budget-for-a-high-quality-website" class="link hover-2">The Cost of a Website: How to Budget for a High-Quality Business Website</a>
+                  </h3>
+
+                  <p class="card-text">
+                    One of the most common questions business owners ask is, "How much does a website cost?" The truth is, the cost of a website varies depending on multiple factors, including design complexity, features, and development approach.
+                  </p>
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2"># Web Design</a>
+
+                      <a href="#" class="span hover-2"># Websites</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+         
+
+        </div>
+
+        <div class="post-aside grid-list">
+
+          <div class="card aside-card">
+
+            <h3 class="headline headline-2 aside-title">
+              <span class="span">Popular Posts</span>
+            </h3>
+
+            <ul class="popular-list">
+
+              <li>
+                <div class="popular-card">
+
+                  <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                    <img src="/images/business website uganda.svg" width="64" height="64" loading="lazy"
+                      alt="Creating is a privilege but it’s also a gift" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h4 class="headline headline-4 card-title">
+                      <a href="#" class="link hover-2">How Local SEO Can Help Your Business Attract Customers in Your Area</a>
+                    </h4>
+
+                    <div class="warpper">
+                      <p class="card-subtitle">10 mins read</p>
+
+                      <time class="publish-date" datetime="2022-04-15">15 Jan 2025</time>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+
+                  <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                    <img src="/images/pexels-anna-nekrashevich-6801872 (1).webp" width="64" height="64" loading="lazy"
+                      alt="Web Speed" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h4 class="headline headline-4 card-title">
+                      <a href="#" class="link hover-2">Website Speed Optimization: How It Impacts Sales and User Experience</a>
+                    </h4>
+
+                    <div class="warpper">
+                      <p class="card-subtitle">10 mins read</p>
+
+                      <time class="publish-date" datetime="2022-04-15">15 Feb 2025</time>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+
+                  <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                    <img src="/images/Web-Hosting-on-AWS.webp" width="64" height="64" loading="lazy"
+                      alt="Best Web Host" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h4 class="headline headline-4 card-title">
+                      <a href="best-hosting-providers-in-2025" class="link hover-2">The Best Hosting Providers in 2025: Powering the Future of the Web</a>
+                    </h4>
+
+                    <div class="warpper">
+                      <p class="card-subtitle">10 mins read</p>
+
+                      <time class="publish-date" datetime="2022-04-15">07 Jan 2025</time>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+
+                  <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                    <img src="/images/professional website 2.webp" width="64" height="64" loading="lazy"
+                      alt="Professional Website" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h4 class="headline headline-4 card-title">
+                      <a href="why-you-need-a-professional-website" class="link hover-2">Why Your Business Needs a Professional Website in 2025</a>
+                    </h4>
+
+                    <div class="warpper">
+                      <p class="card-subtitle">8 mins read</p>
+
+                      <time class="publish-date" datetime="2022-04-15">15 Dec 2024</time>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+
+                  <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                    <img src="/images/mobile.jpg" width="64" height="64" loading="lazy"
+                      alt="Being unique is better than being perfect" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h4 class="headline headline-4 card-title">
+                      <a href="the-future-of-mobile-app-development" class="link hover-2">The Future of Mobile App Development: Trends to Watch in 2025 and Beyond</a>
+                    </h4>
+
+                    <div class="warpper">
+                      <p class="card-subtitle">10 mins read</p>
+
+                      <time class="publish-date" datetime="2022-04-15">15 Jan 2025</time>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="card aside-card">
+
+            <h3 class="headline headline-2 aside-title">
+              <span class="span">Last Comment</span>
+            </h3>
+
+            <ul class="comment-list">
+
+              <li>
+                <div class="comment-card">
+
+                  <blockquote class="card-text">
+                    “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                    roadrunner “
+                  </blockquote>
+
+                  <div class="profile-card">
+                    <figure class="profile-banner img-holder">
+                      <img src="/images/author-6.png" width="32" height="32" loading="lazy" alt="Jane Cooper">
+                    </figure>
+
+                    <div>
+                      <p class="card-title">Jane Cooper</p>
+
+                      <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="comment-card">
+
+                  <blockquote class="card-text">
+                    “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                    roadrunner “
+                  </blockquote>
+
+                  <div class="profile-card">
+                    <figure class="profile-banner img-holder">
+                      <img src="/images/author-7.png" width="32" height="32" loading="lazy" alt="Katen Doe">
+                    </figure>
+
+                    <div>
+                      <p class="card-title">Katen Doe</p>
+
+                      <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="comment-card">
+
+                  <blockquote class="card-text">
+                    “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                    roadrunner “
+                  </blockquote>
+
+                  <div class="profile-card">
+                    <figure class="profile-banner img-holder">
+                      <img src="/images/author-8.png" width="32" height="32" loading="lazy"
+                        alt="Barbara Cartland">
+                    </figure>
+
+                    <div>
+                      <p class="card-title">Barbara Cartland</p>
+
+                      <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="card aside-card insta-card">
+
+            <a href="#" class="logo">
+              <img src="/images/MB LOGO.png" width="119" height="37" loading="lazy" alt="Muyinda Brian logo">
+            </a>
+
+            <p class="card-text">
+              Follow me on instagram
+            </p>
+
+            <ul class="insta-list">
+
+              <li>
+                <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                  <img src="/images/insta-post-1.png" width="276" height="277" loading="lazy" alt="insta post"
+                    class="img-cover">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                  <img src="/images/insta-post-2.png" width="276" height="277" loading="lazy" alt="insta post"
+                    class="img-cover">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                  <img src="/images/insta-post-3.png" width="276" height="277" loading="lazy" alt="insta post"
+                    class="img-cover">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                  <img src="/images/insta-post-4.png" width="276" height="277" loading="lazy" alt="insta post"
+                    class="img-cover">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                  <img src="/images/insta-post-5.png" width="276" height="277" loading="lazy" alt="insta post"
+                    class="img-cover">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                  <img src="/images/insta-post-6.png" width="276" height="277" loading="lazy" alt="insta post"
+                    class="img-cover">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                  <img src="/images/insta-post-7.png" width="276" height="277" loading="lazy" alt="insta post"
+                    class="img-cover">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                  <img src="/images/insta-post-8.png" width="276" height="277" loading="lazy" alt="insta post"
+                    class="img-cover">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                  <img src="/images/insta-post-9.png" width="276" height="277" loading="lazy" alt="insta post"
+                    class="img-cover">
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </article>
+</main>
+
 {{ end }}

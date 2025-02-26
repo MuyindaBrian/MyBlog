@@ -1,8 +1,8 @@
-baseURL = 'https://blog.muyindabrian.com'
+baseURL = 'https://muyindabrian.com'
 languageCode = 'en-us'
-title = 'Muyinda Brian Blog'
+title = 'Muyinda Brian'
 
-paginate = 4
+paginate = 6
 
 [params]
   description = "Web Developer| Web Developer Uganda | Web Designer| Mobile App Developer Uganda"
@@ -11,3 +11,13 @@ paginate = 4
 [taxonomies]
   category = "categories"
   author = "authors"
+  tag = "tags"
+  topic = "topics"
+
+[markup]
+ [markup.tableOfContents]
+  startLevel = 2
+  ordered = true
+  endLevel = 3
+
+  

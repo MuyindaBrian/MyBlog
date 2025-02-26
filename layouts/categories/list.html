@@ -1,48 +1,52 @@
 {{ define "main" }} 
-{{ if eq .RelPermalink "/categories/"}} 
-{{ range $.Site.Taxonomies.categories.ByCount }}
-  <a href="/categories/{{ .Name }}">
-    # {{ .Name }} <small>({{.Count}})</small>
-  </a>
-{{end}}
-{{ else }}
-<div class="list">
+
+<ul class="category-list cats">
+
   {{ range .Paginator.Pages }}
-  <div class="listItem">
-    <img
-      src={{
-      .Params.image
-      }}
-      alt="{{.Title}}"
-      class="listItemImage"
-      loading="lazy"
-    />
-    <div class="listItemTexts">
-      <h1 class="listItemTitle">
-        <a href="{{.Permalink}}">{{.Title}}</a>
-      </h1>
-      <p class="listItemDesc">{{.Params.description}}</p>
-      <div class="listItemDetail">
-        <img
-          src="{{.Params.avatar}}"
-          loading="lazy"
-          alt=""
-          class="listItemAvatar"
-        />
-        <span
-          >{{ range (.GetTerms "authors")}}
-          <a href="{{.Permalink}}">{{ .Name }}</a>
-          {{end}}</span
-        >
-        <time>{{ dateFormat .Site.Params.dateFormat .Date}}</time>
+  
+  <li>
+    <div class="card feature-card cats">
+
+      <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+        <img src="{{ .Params.Image}}" width="1602" height="903" loading="lazy"
+          alt="Self-observation is the first step of inner unfolding" class="img-cover">
+      </figure>
+
+      <div class="card-content">
+
+      
+
+        
+
+        <h3 class="headline headline-3">
+          <a href="{{ .Permalink}}" class="card-title hover-2">
+            {{ .Title }}
+          </a>
+        </h3>
+
+        <div class="card-wrapper">
+
+          <div class="profile-card">
+            <img src="{{ .Params.Image}}" width="48" height="48" loading="lazy" alt="Joseph"
+              class="profile-banner">
+
+            <div>
+              <p class="card-title">{{ .Params.author}}</p>
+
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+
       </div>
-      <div class="listItemCategories">
-        {{ range (.GetTerms "categories") }}
-        <a class="listItemCategory" href={{ .Permalink }}>{{ .Name }}</a>
-        {{ end }}
-      </div>
+
     </div>
-  </div>
-  {{ end }} {{ template "_internal/pagination.html" . }}
-</div>
-{{end}} {{ end }}
+   
+  </li>
+  {{end}} 
+  </ul>
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
