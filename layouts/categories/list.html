@@ -1,15 +1,15 @@
 {{ define "main" }} 
 
-<ul class="category-list cats">
+<ul class="category-list cats ">
 
   {{ range .Paginator.Pages }}
   
   <li>
-    <div class="card feature-card cats">
+    <div class="card feature-card ">
 
       <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-        <img src="{{ .Params.Image}}" width="1602" height="903" loading="lazy"
-          alt="Self-observation is the first step of inner unfolding" class="img-cover">
+        <img src="{{ .Params.categoryImage}}" width="1602" height="903" loading="lazy"
+          alt="" class="img-cover">
       </figure>
 
       <div class="card-content">
@@ -27,7 +27,7 @@
         <div class="card-wrapper">
 
           <div class="profile-card">
-            <img src="{{ .Params.Image}}" width="48" height="48" loading="lazy" alt="Joseph"
+            <img src="{{ .Params.Image}}" width="48" height="48" loading="lazy" alt="Muyinda Brian"
               class="profile-banner">
 
             <div>
