@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Muyinda Brian</title>
-    <link>https://muyindabrian.com/authors/</link>
+    <link>http://localhost:1313/authors/</link>
     <description>Recent content in Authors on Muyinda Brian</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Feb 2025 14:28:55 +0300</lastBuildDate>
-    <atom:link href="https://muyindabrian.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Muyinda Brian</title>
-      <link>https://muyindabrian.com/authors/muyinda-brian/</link>
+      <link>http://localhost:1313/authors/muyinda-brian/</link>
       <pubDate>Tue, 25 Feb 2025 14:28:55 +0300</pubDate>
-      <guid>https://muyindabrian.com/authors/muyinda-brian/</guid>
+      <guid>http://localhost:1313/authors/muyinda-brian/</guid>
       <description></description>
     </item>
   </channel>

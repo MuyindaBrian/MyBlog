@@ -12,7 +12,7 @@ avatar = "/images/avatar.webp"
 tags = [""]
 +++
 
-# Unlock Your Digital Potential with Muyinda Brian - Your Go-To Web Developer
+## Unlock Your Digital Potential with Muyinda Brian - Your Go-To Web Developer
 
 Hello, I’m **Muyinda Brian**, a passionate and experienced web developer dedicated to helping businesses and individuals establish a strong online presence. Whether you're looking to build a stunning website, optimize your search engine rankings, or create a mobile app, I’ve got you covered. Below, I’ve outlined the services I offer, along with detailed pricing to help you make an informed decision.
 
@@ -131,9 +131,9 @@ From logos to social media graphics, I create visually appealing designs that he
 
 Ready to take your digital presence to the next level? Contact me today to discuss your project and get a personalized quote.  
 
-📧 **Email**: [Your Email Address]  
-📞 **Phone**: [Your Phone Number]  
-🌐 **Portfolio**: [Your Portfolio Link]  
+📧 **Email**: [muyindabrian@gmail.com]  
+📞 **Phone**: +256751055947  
+🌐 **Portfolio**: myportfolio.muyindabrian.com  
 
 ---
 
