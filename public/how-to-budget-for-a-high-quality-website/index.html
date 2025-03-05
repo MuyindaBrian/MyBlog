@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="services.css">
-  <link rel="icon" href="/images/favicon.png" />
+  <link rel="icon" href="/images/favicon.svg" />
   <title>How to Budget for a High Quality Website</title>
 </head>
 <body>
@@ -75,11 +75,11 @@
       <div class="singleHeadDetail">
         <img src=/images/avatar.webp loading="lazy" alt="" class="singleAvatar">
         <span>
-          <a href=http://localhost:1313/authors/muyinda-brian/>Muyinda Brian</a>
+          <a href=https://muyindabrian.com/authors/muyinda-brian/>Muyinda Brian</a>
           
         </span>
         
-        <a href=http://localhost:1313/categories/general/ class="singleCategory">general</a>
+        <a href=https://muyindabrian.com/categories/general/ class="singleCategory">general</a>
         
       </div>
       <time>Feb 24, 2025</time>
@@ -251,7 +251,7 @@
         <div class="footer-list">
 
           <p class="footer-list-title">Send Me A Message</p>
-          <form action="https://formspree.io/f/xzzdnkop" method="post" id="contactForm">
+          <form name="contact" method="post" data-netlify="true" id="contactForm">
             <div class="input-wrapper"  >
               <label for="name">Name</label>
               <input type="text" id="name" name="name" class="input-field" required placeholder="Type Your Name">
