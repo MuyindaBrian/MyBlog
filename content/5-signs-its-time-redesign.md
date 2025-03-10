@@ -6,9 +6,9 @@ description = "If your website is outdated or underperforming, it could be costi
 image = "/images/website benefits2.jpg"
 imageBig = "/images/website benefits2.jpg"
 categories = ["UI/UX Design"]
-categoryImage = ""
+categoryImage = "/images/redesign.webp"
 authors = ["Muyinda Brian"]
-avatar = "/images/hero2.jpg"
+avatar = "/images/hero2.webp"
 tags = [""]
 +++
 

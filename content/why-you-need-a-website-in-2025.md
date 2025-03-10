@@ -3,12 +3,12 @@ title = 'Why You Need a Website in 2025'
 date = 2025-02-24T14:41:40+03:00
 draft = false
 description = ""
-image = ""
-imageBig = ""
+image = "/images/website benefits2.webp"
+imageBig = "/images/website benefits2.webp"
 categories = ["general"]
 categoryImage = ""
 authors = ["Muyinda Brian"]
-avatar = "/images/avatar.webp"
+avatar = "/images/hero2.webp"
 tags = [""]
 +++
 

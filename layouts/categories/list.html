@@ -7,10 +7,7 @@
   <li>
     <div class="card feature-card ">
 
-      <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-        <img src="{{ .Params.categoryImage}}" width="1602" height="903" loading="lazy"
-          alt="" class="img-cover">
-      </figure>
+      
 
       <div class="card-content">
 
@@ -27,11 +24,9 @@
         <div class="card-wrapper">
 
           <div class="profile-card">
-            <img src="{{ .Params.Image}}" width="48" height="48" loading="lazy" alt="Muyinda Brian"
-              class="profile-banner">
-
+           
             <div>
-              <p class="card-title">{{ .Params.author}}</p>
+              
 
               
             </div>
@@ -46,7 +41,7 @@
     </div>
    
   </li>
-  {{end}} 
+  {{end}} {{ template "_internal/pagination.html" . }}
   </ul>
-  {{ template "_internal/pagination.html" . }}
+  
 {{ end }}

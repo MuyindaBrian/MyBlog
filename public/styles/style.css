@@ -158,7 +158,7 @@ html {
 }
 
 body {
-  background-color: var(--bg-oxford-blue-2);
+  background-color: var(--bg-oxford-blue-2) ;
   color: var(--text-shadow-blue);
   font-family: var(--fontFamily-noto_sans);
   font-size: 1.6rem;
@@ -576,8 +576,13 @@ body.nav-active { overflow: hidden; }
 
 .slider-subtitle { font-size: var(--fontSize-7); }
 
-
-
+/* FOOTER */
+footer{
+  margin-top: 5rem;
+}
+.header{
+  margin-bottom: 25rem;
+}
 
 
 /*-----------------------------------*\
@@ -840,11 +845,13 @@ body.nav-active { overflow: hidden; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 4rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
 }
 /* CATEGORY START */
 
 /* SINGLE START */
+
 
 
 .singleHead {
@@ -917,6 +924,7 @@ body.nav-active { overflow: hidden; }
 .singleContent h2,
 .singleContent h3 {
   margin: 20px 0px;
+  
 }
 
 .singleContent img {

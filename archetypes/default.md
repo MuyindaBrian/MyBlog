@@ -8,6 +8,6 @@ imageBig = ""
 categories = ["general"]
 categoryImage = ""
 authors = ["Muyinda Brian"]
-avatar = "/images/hero2.jpg"
+avatar = "/images/hero2.webp"
 tags = [""]
 +++

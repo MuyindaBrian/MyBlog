@@ -8,7 +8,7 @@ imageBig = ""
 categories = ["AI"]
 categoryImage = ""
 authors = ["Muyinda Brian"]
-avatar = "/images/avatar.webp"
+avatar = "/images/hero2.webp"
 tags = [""]
 +++
 
