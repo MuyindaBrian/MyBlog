@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.shellIntegration.enabled": true,
+    "terminal.integrated.windowsEnableConpty": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true
+}

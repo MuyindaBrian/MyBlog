@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web Design on Muyinda Brian</title>
-    <link>http://localhost:1313/categories/web-design/</link>
+    <link>https://muyindabrian.com/categories/web-design/</link>
     <description>Recent content in Web Design on Muyinda Brian</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Feb 2025 14:47:56 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/web-design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://muyindabrian.com/categories/web-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Budget for a High Quality Website</title>
-      <link>http://localhost:1313/how-to-budget-for-a-high-quality-website/</link>
+      <link>https://muyindabrian.com/how-to-budget-for-a-high-quality-website/</link>
       <pubDate>Mon, 24 Feb 2025 14:47:56 +0300</pubDate>
-      <guid>http://localhost:1313/how-to-budget-for-a-high-quality-website/</guid>
+      <guid>https://muyindabrian.com/how-to-budget-for-a-high-quality-website/</guid>
       <description>&lt;p&gt;One of the most common questions business owners ask is, &amp;ldquo;How much does a website cost?&amp;rdquo; The truth is, the cost of a website varies depending on multiple factors, including design complexity, features, and development approach. Whether you&amp;rsquo;re a small business owner, an entrepreneur, or a large corporation, understanding website costs will help you budget effectively.&lt;/p&gt;&#xA;&lt;p&gt;In this blog, we’ll break down the different costs involved in building a website and how you can budget wisely.&lt;/p&gt;</description>
     </item>
   </channel>
