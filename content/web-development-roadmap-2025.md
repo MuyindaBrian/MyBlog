@@ -2,9 +2,9 @@
 title = 'Web Development Roadmap 2025: What to Learn and Where to Focus'
 date = 2025-02-25T14:20:25+03:00
 draft = false
-description = ""
-image = ""
-imageBig = ""
+description = "Whether you’re a beginner just starting your journey or an experienced developer looking to stay ahead of the curve, this Web Development Roadmap for 2025 will guide you through the skills, tools, and trends you need to focus on"
+image = "/images/web developmentr.webp"
+imageBig = "/images/web developmentr.webp"
 categories = ["Web Development"]
 categoryImage = ""
 authors = ["Muyinda Brian"]
@@ -23,8 +23,11 @@ The world of web development is constantly evolving, with new technologies, fram
 A roadmap is essential for anyone looking to succeed in web development. It helps you:
 
 - **Stay Updated**: The tech industry moves fast, and staying updated is crucial to remain competitive.  
-- **Focus on Relevant Skills**: With so many tools and technologies available, a roadmap helps you prioritize what to learn.  
-- **Plan Your Career**: Whether you’re freelancing, working for a company, or building your own projects, a roadmap helps you set clear goals.  
+
+- **Focus on Relevant Skills**: With so many tools and technologies available, a roadmap helps you prioritize what to learn.
+
+- **Plan Your Career**: Whether you’re freelancing, working for a company, or building your own projects, a roadmap helps you set clear goals.
+  
 - **Adapt to Trends**: By understanding future trends, you can position yourself as a forward-thinking developer.  
 
 ![Web Development Roadmap](/images/Web%20Development%20Roadmap.webp)  

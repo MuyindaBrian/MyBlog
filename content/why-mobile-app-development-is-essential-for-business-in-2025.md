@@ -8,7 +8,7 @@ imageBig = "/images/mobile app.jpg"
 categories = ["Mobile App Development"]
 categoryImage = "/images/mobile app.jpg"
 authors = ["Muyinda Brian"]
-avatar = "/images/avatar.webp"
+avatar = "/images/hero2.webp"
 tags = [""]
 +++
 

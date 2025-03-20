@@ -8,7 +8,7 @@ imageBig = "/images/Local SEO Success.webp"
 categories = ["SEO"]
 categoryImage = ""
 authors = ["Muyinda Brian"]
-avatar = "/images/avatar.webp"
+avatar = "/images/hero2.webp"
 tags = [""]
 +++
 
